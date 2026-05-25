@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qui parle au Journal Télévisé ? — Elsa Ortis · ODU 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#F5F2EC;font-family:'DM Sans',sans-serif;color:#111}
+
+.page{min-height:100vh;display:flex;flex-direction:column}
+
+/* Bandeau */
+.band{background:#CC1122;padding:0 40px;height:52px;display:flex;align-items:center;justify-content:space-between}
+.band-logo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#fff}
+.band-r{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+
+/* Hero */
+.hero{flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 52px)}
+
+.hero-left{
+  padding:72px 64px;
+  display:flex;flex-direction:column;justify-content:center;
+  border-right:1px solid #DDDAD0;
+}
+.hero-right{
+  background:#EDE9E0;
+  display:flex;flex-direction:column;justify-content:center;
+  gap:16px;padding:64px 52px;
+}
+
+.ey{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:#CC1122;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.ey::before{content:'';width:20px;height:1px;background:#CC1122}
+
+.h1{font-family:'Playfair Display',serif;font-size:clamp(40px,5.5vw,68px);font-weight:900;line-height:1.02;margin-bottom:16px}
+.h1 em{font-style:italic;color:#CC1122}
+
+.phrase{font-size:16px;color:#555;line-height:1.7;max-width:480px;margin-bottom:32px;font-weight:300}
+.phrase strong{color:#111;font-weight:600}
+
+/* Stats */
+.stats{display:flex;gap:28px;padding-top:24px;border-top:1px solid #DDDAD0;margin-bottom:32px}
+.stat-n{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:#111}
+.stat-n.r{color:#CC1122}
+.stat-l{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-top:2px}
+
+/* Cards */
+.card-link{
+  display:block;text-decoration:none;color:inherit;
+  background:#fff;border:2px solid #DDDAD0;
+  padding:24px 28px;
+  transition:all .18s;cursor:pointer;
+}
+.card-link:hover{border-color:#CC1122;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card-link.primary{border-color:#CC1122;background:#fff}
+.card-link.primary:hover{background:#FFF0F0}
+
+.card-tag{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#CC1122;margin-bottom:8px}
+.card-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:6px;color:#111}
+.card-desc{font-size:13px;color:#666;line-height:1.55;margin-bottom:14px}
+.card-cta{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#CC1122;display:flex;align-items:center;gap:6px}
+.card-cta.dark{color:#111}
+
+/* Icônes AV déco */
+.av-deco{display:flex;gap:12px;margin-bottom:20px;opacity:.2}
+
+/* Footer */
+.footer{padding:16px 40px;background:#111;display:flex;align-items:center;justify-content:space-between}
+.footer-l{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.08em;color:rgba(255,255,255,.4)}
+.footer-r{font-family:'DM Mono',monospace;font-size:8.5px;color:rgba(255,255,255,.25)}
+
+/* Ticker */
+.ticker{height:28px;background:#1C1C1C;border-top:2px solid #CC1122;overflow:hidden;display:flex;align-items:center}
+.t-lbl{flex-shrink:0;background:#CC1122;height:100%;display:flex;align-items:center;padding:0 14px;font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;border-right:1px solid rgba(255,255,255,.15);white-space:nowrap}
+.t-scroll{flex:1;overflow:hidden}
+.t-in{display:inline-block;white-space:nowrap;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.07em;color:rgba(255,255,255,.75);animation:tick 50s linear infinite;padding-left:60px}
+.t-in .hi{color:#FF8080}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+@media(max-width:720px){
+  .hero{grid-template-columns:1fr}
+  .hero-left{padding:40px 24px}
+  .hero-right{padding:32px 24px}
+  .stats{gap:16px;flex-wrap:wrap}
+  .band{padding:0 20px}
+  .footer{flex-direction:column;gap:8px;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="band">
+  <div class="band-logo">Qui parle au Journal Télévisé ?</div>
+  <div class="band-r">Elsa Ortis · Open Data University · Saison 4 · 2025</div>
+</div>
+
+<div class="hero">
+
+  <!-- Gauche -->
+  <div class="hero-left">
+    <div class="av-deco">
+      <svg width="36" height="28" viewBox="0 0 60 48" fill="none"><rect x="2" y="8" width="38" height="28" rx="4" fill="#111"/><rect x="2" y="8" width="38" height="8" rx="2" fill="#CC1122" opacity=".8"/><circle cx="16" cy="26" r="8" fill="#222" stroke="#444" stroke-width="1.5"/><circle cx="16" cy="26" r="4.5" fill="#111"/><rect x="40" y="15" width="16" height="14" rx="2" fill="#333"/></svg>
+      <svg width="18" height="32" viewBox="0 0 28 54" fill="none"><rect x="8" y="2" width="12" height="20" rx="6" fill="#111"/><path d="M4 20 Q4 32 14 32 Q24 32 24 20" stroke="#111" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="13" y="32" width="2" height="12" fill="#111"/><rect x="8" y="44" width="12" height="3" rx="1.5" fill="#111"/></svg>
+      <svg width="40" height="30" viewBox="0 0 60 48" fill="none"><rect x="2" y="2" width="56" height="36" rx="4" fill="#111"/><rect x="6" y="6" width="48" height="28" rx="2" fill="#1a1a2e"/><rect x="6" y="6" width="48" height="7" rx="2" fill="#CC1122" opacity=".75"/></svg>
+    </div>
+
+    <div class="ey">Open Data University · Saison 4 · Défi Audiovisuel</div>
+
+    <h1 class="h1">En 2019, elle parle<br><em>14 minutes de moins.</em><br>Depuis 10 ans.</h1>
+
+    <p class="phrase">
+      80 445 heures de journaux télévisés analysées par intelligence artificielle. 5 chaînes françaises. 10 ans de données officielles INA. <strong>La parité n'est attendue qu'en 2035.</strong>
+    </p>
+
+    <div class="stats">
+      <div><div class="stat-n r">34,76 %</div><div class="stat-l">Part féminine · 2010–2019</div></div>
+      <div><div class="stat-n">2035</div><div class="stat-l">Parité projetée</div></div>
+      <div><div class="stat-n">80 445 h</div><div class="stat-l">Analysées par IA · INA</div></div>
+    </div>
+
+    <p style="font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:#AAA">
+      Sources : INA — Baromètre JT TV · ARCOM/CSA 2019 · Modèle Ridge L2 · R²CV = 0,50<br>
+      Publié sur data.gouv.fr · Licence Ouverte 2.0
+    </p>
+  </div>
+
+  <!-- Droite — deux entrées -->
+  <div class="hero-right">
+    <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#888;margin-bottom:4px">Choisissez votre entrée</div>
+
+    <!-- App expérience -->
+    <a href="qui_parle_au_jt_experience_.html" class="card-link primary">
+      <div class="card-tag">📺 Application interactive</div>
+      <div class="card-title">L'expérience · Quiz &amp; Exploration</div>
+      <div class="card-desc">Testez vos intuitions sur la parole des femmes au JT. Quiz, données par chaîne, timeline #MeToo, modèle statistique, révélations. Conçu pour être compris en 10 secondes.</div>
+      <div class="card-cta">Démarrer l'expérience →</div>
+    </a>
+
+    <!-- Observatoire -->
+    <a href="qui_parle_au_jt_observatoire_.html" class="card-link">
+      <div class="card-tag">📊 Dashboard analytique</div>
+      <div class="card-title">L'observatoire · Analyse complète</div>
+      <div class="card-desc">5 onglets d'analyse : évolution temporelle, 14 thèmes éditoriaux, comparaison par chaîne, heatmap et modèle Ridge L2. Pour les chercheurs, régulateurs et journalistes.</div>
+      <div class="card-cta dark">Ouvrir l'observatoire →</div>
+    </a>
+
+    <!-- data.gouv.fr -->
+    <a href="https://www.data.gouv.fr/reuses/qui-parle-au-jt-observatoire-de-la-parole-des-femmes-dans-linformation-televisee-francaise-2010-2019" target="_blank" class="card-link" style="padding:16px 28px">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div class="card-tag" style="color:#888">🔗 Données ouvertes</div>
+          <div style="font-size:13px;color:#555">Projet publié sur data.gouv.fr · Licence Ouverte 2.0</div>
+        </div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#AAA">↗</div>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="ticker">
+  <div class="t-lbl">📺 Journal Télévisé</div>
+  <div class="t-scroll"><div class="t-in">
+    <span class="hi">Journal Télévisé · France · 2010–2019</span> &nbsp;·&nbsp; 80 445 heures de journaux télévisés analysées &nbsp;·&nbsp; <span class="hi">34,76 % de temps de parole féminine en moyenne</span> &nbsp;·&nbsp; TF1 · France 2 · France 3 · M6 · ARTE &nbsp;·&nbsp; <span class="hi">Parité projetée en 2035 · encore 16 ans</span> &nbsp;·&nbsp; International · 32,5 % · angle mort persistant &nbsp;·&nbsp; <span class="hi">2017 · #MeToo · +1,91 pts en une seule année</span> &nbsp;·&nbsp; Chaînes privées plus paritaires que publiques : +7,1 pts &nbsp;·&nbsp; Ridge L2 · R²CV = 0,50 · alpha = 4,77 &nbsp;·&nbsp; <span class="hi">Elsa Ortis · Open Data University 2025</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="hi">Journal Télévisé · France · 2010–2019</span> &nbsp;·&nbsp; 80 445 heures de journaux télévisés analysées &nbsp;·&nbsp; <span class="hi">34,76 % de temps de parole féminine en moyenne</span> &nbsp;·&nbsp; TF1 · France 2 · France 3 · M6 · ARTE &nbsp;·&nbsp; <span class="hi">Parité projetée en 2035 · encore 16 ans</span> &nbsp;·&nbsp; International · 32,5 % · angle mort persistant &nbsp;·&nbsp; <span class="hi">2017 · #MeToo · +1,91 pts</span> &nbsp;·&nbsp; <span class="hi">Elsa Ortis · Open Data University 2025</span>
+  </div></div>
+</div>
+
+<div class="footer">
+  <div class="footer-l">Elsa Ortis · Master 2 Data Analytics · INSEEC · Open Data University Saison 4 · 2025</div>
+  <div class="footer-r">Sources : INA · ARCOM/CSA · data.gouv.fr · Licence Ouverte 2.0</div>
+</div>
+
+</div>
+</body>
+</html>
