@@ -631,40 +631,24 @@ input.slr::-webkit-slider-thumb:hover{background:var(--r)}
 <!-- ══ S3 — POURQUOI ? ══ -->
 <div class="sc" id="s3">
 <div class="body">
-  <div class="ey">Modèle Ridge L2 · alpha = 4,77 · R²CV = 0,50 · k=5 <span style="color:var(--ink3);opacity:.7">· comprendre la cause pour mieux agir</span></div>
+  <div class="ey">Analyse statistique · INA / ARCOM · 2010–2019 <span style="color:var(--ink3);opacity:.7">· comprendre la cause pour mieux agir</span></div>
   <h2 class="h2" style="margin-bottom:6px">Le problème n'est pas le sujet traité. <em>C'est systémique.</em></h2>
-  <p class="lede" style="font-size:13px;margin-bottom:8px">L'écart entre le thème le plus et le moins paritaire : <strong>3,73 pts seulement</strong>. Quel que soit le sujet, les femmes parlent toujours moins.</p>
+  <p class="lede" style="font-size:13px;margin-bottom:6px;color:var(--ink3)">On a vu l'écart et sa lente progression. Reste la vraie question : <strong style="color:var(--ink2)">d'où vient-il ?</strong> Première hypothèse à tester — et si tout dépendait des sujets traités ? Certains thèmes donneraient-ils plus la parole aux femmes que d'autres ?</p>
+  <p class="lede" style="font-size:13px;margin-bottom:8px">Pour chaque thème, j'ai regardé s'il était lié au temps de parole des femmes : est-ce que parler d'un sujet va de pair avec <strong>plus</strong> de femmes à l'antenne, ou <strong>moins</strong> ? Plus la barre est longue, plus le lien est fort.</p>
   <div style="display:flex;gap:16px;font-family:var(--mono);font-size:8.5px;color:var(--ink3);margin-bottom:10px;flex-wrap:wrap;align-items:center">
-    <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:4px;border-radius:2px;background:var(--t)"></span>Positif = plus de parole féminine</span>
-    <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:4px;border-radius:2px;background:var(--r)"></span>Négatif = moins de parole féminine</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:4px;border-radius:2px;background:var(--t)"></span>Lien positif = plus de parole féminine</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:4px;border-radius:2px;background:var(--r)"></span>Lien négatif = moins de parole féminine</span>
     <span>· Survolez pour le détail</span>
   </div>
   <div class="rb-wrap" id="rb"></div>
   <div class="re-g">
-    <div class="rec r"><span class="rec-n">−1,00</span><strong>International — angle mort structurel</strong><br>Triple signal : part féminine la plus basse (32,5 %) + corrélation la plus négative (−0,60) + coefficient le plus négatif. Carnets d'adresses des rédactions encore masculins. <span style="opacity:.5;font-size:10px">2010–2019 · INA</span></div>
-    <div class="rec go"><span class="rec-n">+1,98</span><strong>Faits divers — paradoxe ⚠</strong><br>Coefficient le plus positif — mais parole souvent subie (victimes/témoins). <em>Parole subie ≠ expertise.</em> Les données INA ne distinguent pas le statut de la locutrice. <span style="opacity:.5;font-size:10px">2010–2019 · INA</span></div>
+    <div class="rec r"><span class="rec-n">−0,60</span><strong>International — angle mort structurel</strong><br>Le seul lien négatif marqué : plus un JT parle d'international, moins les femmes s'expriment. Géopolitique, diplomatie, défense : carnets d'adresses encore masculins. <span style="opacity:.5;font-size:10px">2010–2019 · INA</span></div>
+    <div class="rec go"><span class="rec-n">+0,58</span><strong>Faits divers — lien positif mais ⚠</strong><br>Lien positif le plus fort — mais parole souvent subie (victimes/témoins). <em>Parole subie ≠ expertise.</em> Les données INA ne distinguent pas le statut de la locutrice. <span style="opacity:.5;font-size:10px">2010–2019 · INA</span></div>
   </div>
-  <!-- ★ BLOC R²=0,50 — version élégante : la moitié / l'autre moitié -->
-  <div style="border:1px solid var(--bd);background:var(--w);margin-top:4px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;padding:13px 18px 8px">
-      <div><span style="font-family:var(--serif);font-size:34px;font-weight:900;color:var(--r);line-height:1">0,50</span><span style="font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-left:8px">R²CV · ce que le modèle explique</span></div>
-      <div style="font-family:var(--mono);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)">Décomposition de l'écart</div>
-    </div>
-    <!-- Barre 50/50 -->
-    <div style="display:flex;height:34px;margin:0 18px;border-radius:2px;overflow:hidden">
-      <div style="width:50%;background:var(--r);display:flex;align-items:center;padding:0 12px"><span style="color:#fff;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em">EXPLIQUÉ PAR LES SUJETS</span></div>
-      <div style="width:50%;background:var(--ink);display:flex;align-items:center;justify-content:flex-end;padding:0 12px"><span style="color:#fff;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.04em">CE QUI RESTE INVISIBLE</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;padding:10px 18px 16px" class="r2-cols">
-      <div style="padding-right:18px;border-right:1px solid var(--bd)">
-        <div style="font-size:12.5px;line-height:1.55;color:var(--ink2)"><strong style="color:var(--ink)">Le contenu des JT joue un vrai rôle.</strong> Les sujets traités expliquent la moitié de l'écart — c'est beaucoup pour un phénomène social.</div>
-      </div>
-      <div style="padding-left:18px">
-        <div style="font-size:12.5px;line-height:1.55;color:var(--ink2)"><strong style="color:var(--r)">L'autre moitié se joue dans les coulisses</strong> — qui les rédactions invitent, qui anime, qui décide. <em>C'est pourquoi le problème est systémique.</em></div>
-      </div>
-    </div>
+  <!-- ★ ENCART explicatif sous le diagramme -->
+  <div style="border:1px solid var(--bd);background:var(--w);margin-top:8px;padding:14px 18px;font-size:12.5px;color:var(--ink2);line-height:1.6">
+    <strong style="color:var(--r)">Un seul thème montre un lien négatif marqué : l'International (−0,60)</strong> — plus un JT en parle, moins les femmes s'expriment. Tous les autres restent modérés, dispersés autour de zéro. Conclusion : <strong style="color:var(--ink)">aucun sujet ne décide vraiment qui prend la parole.</strong> Le déséquilibre ne vient pas du contenu des journaux, mais de plus profond — c'est ce qui le rend systémique.
   </div>
-  <div style="padding:9px 14px;border:1px solid var(--bd);font-size:10.5px;color:var(--ink3);line-height:1.5;margin-top:8px"><strong>Pourquoi Ridge ?</strong> Régression pénalisée (L2), adaptée à 50 observations pour 14 variables fortement corrélées. Le paramètre alpha = 4,77 a été choisi automatiquement par validation croisée (RidgeCV, k=5).</div>
   <div style="margin-top:16px"><button class="btn btn-r" onclick="go(4)">Les paradoxes →</button></div>
 </div>
 </div>
@@ -690,7 +674,7 @@ input.slr::-webkit-slider-thumb:hover{background:var(--r)}
     </div></div>
     <div class="flip" onclick="df(this)"><div class="flip-in">
       <div class="ff"><div class="ffi">⚖️</div><div class="ffl">La preuve systémique</div><div class="ffh">Cliquez pour révéler</div></div>
-      <div class="fb r"><div class="fbn">3,73 pts</div><div class="fbt">Écart entre thème le moins paritaire (International 32,5 %) et le plus (Faits divers 36,2 %). Un écart aussi minime prouve que <strong>le sujet n'est pas le problème.</strong></div><div class="fbs">Moyenne pondérée 2010–2019 · INA</div></div>
+      <div class="fb r"><div class="fbn">1 seul</div><div class="fbt">Sur 14 thèmes, <strong>un seul</strong> montre un lien négatif marqué avec la parole des femmes : l'International (−0,60). Tous les autres restent modérés. <strong>Le sujet ne décide pas qui parle</strong> — la cause est structurelle.</div><div class="fbs">Corrélation thème ↔ parole féminine · 2010–2019 · INA</div></div>
     </div></div>
   </div>
   <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:4px">
@@ -714,7 +698,7 @@ input.slr::-webkit-slider-thumb:hover{background:var(--r)}
       <div class="cs accent"><div class="cs-l">Part féminine · 2010–2019</div><div class="cs-n r">34,76 %</div><div class="cs-d">Panel INA · 5 chaînes · 50 obs.</div></div>
       <div class="cs accent"><div class="cs-l">Parité projetée · depuis 2019</div><div class="cs-n r">2035</div><div class="cs-d">+0,70 pt/an · encore 16 ans</div></div>
       <div class="cs"><div class="cs-l">Heures analysées par IA</div><div class="cs-n k">80 445 h</div><div class="cs-d">inaSpeechSegmenter · INA/GEM</div></div>
-      <div class="cs" style="background:var(--rL)"><div class="cs-l">Écart systémique · tous thèmes</div><div class="cs-n r">3,73 pts</div><div class="cs-d">International → Faits divers</div></div>
+      <div class="cs" style="background:var(--rL)"><div class="cs-l">Lien le plus négatif · thème</div><div class="cs-n r">−0,60</div><div class="cs-d">International → parole féminine</div></div>
     </div>
     <div class="lim">
       <span class="lim-l">⚠ Limites à mentionner</span>
@@ -742,7 +726,7 @@ input.slr::-webkit-slider-thumb:hover{background:var(--r)}
     <div class="action t"><div class="action-who">📡 Régulateurs · ARCOM / CSA</div><div class="action-txt">Pour <strong>suivre les progrès dans le temps</strong>. Un observatoire sur 10 ans et 14 thèmes, comparable d'une année à l'autre, qui révèle les angles morts persistants.</div></div>
     <div class="action go"><div class="action-who">📺 Rédactions TV</div><div class="action-txt">Pour <strong>agir concrètement</strong>. Un diagnostic par chaîne et par thème — et des annuaires d'expertes (Les Expertes, WoMen&Science) pour changer le carnet d'adresses dès demain.</div></div>
     <div class="action" style="border-left:3px solid var(--ink)"><div class="action-who">📚 Citoyens · enseignants · chercheurs</div><div class="action-txt">Pour <strong>comprendre et transmettre</strong>. Données et code ouverts, librement réutilisables pour un cours, un article ou une nouvelle analyse.</div></div>
-    <div style="font-family:var(--mono);font-size:7.5px;color:var(--ink3);line-height:1.7;margin-top:8px">Elsa Ortis · ODU 2026 · INA — Baromètre JT TV · ARCOM/CSA · Ridge L2 · R²CV = 0,50</div>
+    <div style="font-family:var(--mono);font-size:7.5px;color:var(--ink3);line-height:1.7;margin-top:8px">Elsa Ortis · ODU 2026 · INA — Baromètre JT TV · ARCOM/CSA</div>
   </div>
 </div>
 </div>
@@ -982,17 +966,17 @@ function usim(rythme){
 }
 
 // ── S3 RIDGE ──
-const TH=[{n:'International',c:-1.00,p:32.48,note:'Triple signal négatif · angle mort · 2010–2019'},{n:'Justice',c:-0.74,p:34.75,note:'Avocats, magistrats · 2010–2019'},{n:'Catastrophes',c:-0.64,p:35.51,note:'Voix institutionnelles masculines · 2010–2019'},{n:'Éducation',c:-0.50,p:35.56,note:'Contre-intuitif malgré féminisation · 2010–2019'},{n:'Environnement',c:-0.26,p:34.92,note:'Tendance négative légère · 2010–2019'},{n:'Économie',c:-0.16,p:35.12,note:'Experts encore masculins · 2010–2019'},{n:'Santé',c:-0.09,p:35.49,note:'Léger négatif malgré féminisation · 2010–2019'},{n:'Histoire',c:0.05,p:34.54,note:'Effet marginal · 2010–2019'},{n:'Sport',c:0.14,p:35.76,note:'Rubrique JT ≠ chaînes sportives · 2010–2019'},{n:'Politique FR',c:0.51,p:35.43,note:'Féminisation progressive · 2010–2019'},{n:'Culture',c:0.74,p:34.38,note:'Artistes, autrices · 2010–2019'},{n:'Société',c:1.44,p:35.33,note:'Témoignages terrain · 2010–2019'},{n:'Sciences',c:1.89,p:35.73,note:'Secteur en féminisation · 2010–2019'},{n:'Faits divers',c:1.98,p:36.21,note:'⚠ Parole souvent subie · 2010–2019'}].sort((a,b)=>a.c-b.c);
+const TH=[{n:'International',c:-0.60,p:32.48,note:'Seul lien négatif fort · angle mort · 2010–2019'},{n:'Culture',c:-0.19,p:34.38,note:'Lien légèrement négatif · 2010–2019'},{n:'Histoire',c:-0.19,p:34.54,note:'Lien légèrement négatif · 2010–2019'},{n:'Justice',c:-0.01,p:34.75,note:'Aucun lien · 2010–2019'},{n:'Environnement',c:0.11,p:34.92,note:'Lien très faible · 2010–2019'},{n:'Économie',c:0.25,p:35.12,note:'Lien faible · 2010–2019'},{n:'Politique FR',c:0.29,p:35.43,note:'Lien faible · 2010–2019'},{n:'Sport',c:0.37,p:35.76,note:'Lien modéré · 2010–2019'},{n:'Catastrophes',c:0.38,p:35.51,note:'Lien modéré · 2010–2019'},{n:'Éducation',c:0.45,p:35.56,note:'Lien modéré · 2010–2019'},{n:'Santé',c:0.46,p:35.49,note:'Lien modéré · 2010–2019'},{n:'Société',c:0.55,p:35.33,note:'Lien positif · témoignages terrain · 2010–2019'},{n:'Sciences',c:0.57,p:35.73,note:'Lien positif · secteur en féminisation · 2010–2019'},{n:'Faits divers',c:0.58,p:36.21,note:'⚠ Lien positif · parole souvent subie · 2010–2019'}].sort((a,b)=>a.c-b.c);
 let rdone=false;
 function initRidge(){
   if(rdone)return;rdone=true;
   const w=document.getElementById('rb'),tip=document.getElementById('tip');
   TH.forEach((t,i)=>{
-    const ii=t.n==='International',fd=t.n==='Faits divers',pos=t.c>=0,pct=Math.abs(t.c)/2.0*48;
+    const ii=t.n==='International',fd=t.n==='Faits divers',pos=t.c>=0,pct=Math.abs(t.c)/0.65*48;
     const row=document.createElement('div');row.className='rr';
     row.innerHTML=`<span class="rn ${ii?'hi':fd?'wa':''}">${ii?'⚠ ':fd?'* ':' '}${t.n}</span><div class="rc"><div class="rm"></div><div class="rf ${pos?'p':'n'}${ii?' ni':''}" id="rbar${i}" style="width:0%"></div></div><span class="rv ${pos?'p':'n'}">${t.c>0?'+':''}${t.c.toFixed(2)}</span>`;
     w.appendChild(row);
-    row.addEventListener('mouseenter',e=>{tip.innerHTML=`<strong>${t.n}</strong><br>Coeff. : ${t.c>0?'+':''}${t.c.toFixed(2)}<br>Part fém. : ${t.p.toFixed(2)} %<br><span style="opacity:.6;font-size:10px">${t.note}</span>`;tip.classList.add('on');bp(360+Math.abs(t.c)*160,.04,.05,'sine')});
+    row.addEventListener('mouseenter',e=>{tip.innerHTML=`<strong>${t.n}</strong><br>Corrélation : ${t.c>0?'+':''}${t.c.toFixed(2)}<br>Part fém. : ${t.p.toFixed(2)} %<br><span style="opacity:.6;font-size:10px">${t.note}</span>`;tip.classList.add('on');bp(360+Math.abs(t.c)*160,.04,.05,'sine')});
     row.addEventListener('mousemove',e=>{tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY-10)+'px'});
     row.addEventListener('mouseleave',()=>tip.classList.remove('on'));
     setTimeout(()=>{const el=document.getElementById('rbar'+i);if(el)el.style.width=pct+'%'},60+i*55);
